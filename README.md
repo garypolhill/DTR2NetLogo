@@ -1,2 +1,26 @@
 # DTR2NetLogo
 Perl script to convert from Decision Tree output from R's rpart() function to NetLogo code
+
+To use it, save the output from a call to rpart() or rpartScore() (or print of the return value) to a text file. Then call this script from the commandline, giving the text file as the first argument, and the NetLogo output file you want created as the second argument. It is designed to work with a specific R script that creates a number of trees, but should be modifiable for more general contexts.
+
+This code was created for a specific analysis in the LOCAW (Low Carbon at Work) FP7 (Framework Programme 7) EC (European Commission) funded project (grant agreement number 265155, website (still active at April 2017) http://www.locaw-fp7.com/).
+
+You can read more about this work in various journal articles, book chapters, and conference papers:
+
+García-Mira, R., Dumitru, A., Alonso-Betanzos, A., Sánchez-Maroño, N., Fontenla-Romero, Ó., Craig, T. and Polhill, J. G. (in press) Testing scenarios to achieve workplace sustainability goals using backcasting and agent-based modeling. Environment and Behavior. (doi:10.1177/0013916516673869)
+
+Polhill, G., Craig, T., Alonso-Betanzos, A., Sanchez-Maroño, N., Fontenla-Romero, Ó., Dumitru, A., Bonnes, M., Bonaiuto, M., Carrus, G., Fornara, F., Maricchiolo, F., Steg, L., Ruepert, A., Kaizer, K., García-Mira, R. (2014) Empirical agent-based modelling of everyday pro-environmental behaviours at work. In Ames, D. P., Quinn, N. W. T. and Rizzoli, A. E. (eds.) Proceedings of the 7th International Congress on Environmental Modelling and Software, June 15-19, San Diego, California, USA. http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_175.pdf
+
+Polhill, J. G., Craig, T., Alonso-Betanzos, A., Sánchez-Maroño, N., Fontenla-Romero, O., Dumitru, A., García-Mira, R., Bonnes, M., Bonaiuto, M., Carrus, G., Maricchiolo, F., Fornara, F., Ilin, C., Steg, L., Ruepert, A. and Keizer, K. (2017) Interactions matter: Modelling everyday pro-environmental norm transmission and diffusion in workplace networks. In Alonso-Betanzos, A., Sánchez-Maroño, N., Fontenla-Romero, O., Polhill, J. G., Craig, T., Bajo, J. and Corchado, J. M. (eds.) Agent-Based Modeling of Sustainable Behaviors. Cham, Switzerland: Springer. pp. 27-52. (doi:10.1007/978-3-319-46331-5_2)
+
+Sánchez-Maroño, N., Alonso-Betanzos, A., Fontenla-Romero, O., Brinquis-Núñez, C., Polhill, J. G., Craig, T., Dumitru, A. and García-Mira, R. (2015) An agent-based model for simulating environmental behavior in an educational organization. Neural Processing Letters 42 (1), 89-118. (doi:10.1007/s11063-014-9390-5)
+
+Sánchez-Maroño, N., Alonso-Betanzos, A., Fontenla-Romero, O., Bolón-Canedo, V., Gotts, N. M., Polhill, J. G., Craig, T. and García-Mira, R. (2012) An agent-based prototype for enhancing sustainability behavior at an academic environment. In Bajo Pérez, J., Corchado Rodríguez, J. M., Adam, E., Ortega, A., Moreno, M. N., Navarro, E., Hirsch, B., Lopes-Cardoso, H., Julián, V., Sánchez, M. A. and Mathieu, P. (eds.) Highlights on Practical Applications of Agents and Multi-Agent Systems, 10th International Conference on Practical Applications of Agents and Multi-Agent Systems, Advances in Intelligent and Soft Computing 156. Heidelberg: Springer. pp. 257-264. (doi:10.1007/978-3-642-28762-6_31)
+
+Sánchez-Maroño, N., Alonso-Betanzos, A., Fontenla-Romero, O., Brinquis-Núñez, C., Polhill, J. G. and Craig, T. (2014) Influence of internal values and social networks for achieving sustainable organizations. In Schaub, T., Friedrich, G. and O’Sullivan, B. (eds.) ECAI 2014. Frontiers in Artificial Intelligence and Applications 263. IOS Press. pp. 1179-1184. (doi:10.3233/978-1-61499-419-0-1179)
+
+Sánchez-Maroño, N., Alonso-Betanzos, A., Fontenla-Romero, O., Polhill, J. G. and Craig, T. (2015) Designing decision trees for representing sustainable behaviours in agents. In Bajo, J., Hernández, J. Z., Mathieu, P., Campbell, A., Fernández-Caballero, A., Moreno, M. N., Julián, V., Alonso-Betanzos, A., Jiménez-López, M. D. and Botti, V. (eds.) Trends in Practical Applications of Agents, Multi-Agent Systems and Sustainability: The PAAMS Collection. Advances in Intelligent Systems and Computing 372. Switzerland: Springer. pp. 169-176. (doi:10.1007/978-3-319-19629-9_19)
+
+Sánchez-Maroño, N., Alonso-Betanzos, A., Fontenla-Romero, O., Rodríguez-García, M., Polhill, G. and Craig, T. (2013) A decision-making model for environmental behaviour in agent-based modelling. In Rojas, I., Joya, G. and Gabestany, J. (eds.) Advances in Computational Intelligence: 12th International Work-Conference on Artificial Neural Networks, IWANN 2013, Puerto de la Cruz, Tenerife, Spain, June 12-14, 2013, Proceedings, Part I. Lecture Notes in Computer Science 7902. Berlin: Springer-Verlag. pp. 152-160. (doi:10.1007/978-3-642-38679-4_14)
+
+Sánchez-Maroño, N., Alonso-Betanzos, A., Fontenla-Romero, O., Polhill, J. G. and Craig, T. (2017) Empirically-derived behavioral rules in agent-based models using decision trees learned from questionnaire data. In Alonso-Betanzos, A., Sánchez-Maroño, N., Fontenla-Romero, O., Polhill, J. G., Craig, T., Bajo, J. and Corchado, J. M. (eds.) Agent-Based Modeling of Sustainable Behaviors. Cham, Switzerland: Springer. pp. 53-76. (doi:10.1007/978-3-319-46331-5_3)
